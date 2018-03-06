@@ -1,0 +1,33 @@
+Local Storage
+
+Lesson Objectives:
+  -Read, write, and update with Local Storage
+  -Change the view of a page when it is loaded based on stored data
+  -Perform CRUD operations on items in local storage.2
+
+About:
+  The Web Storage API provides mechanisms by which browsers can store Key-value pairs, in a much more intuitive fashion than using cookies. Local Storage is accessed via globally available object. Local Storage only supports strings so it is important to make use of JSON.stringify() and JSON.parse().
+
+  There are two mechanisms within Web Storage:
+    -sessionStorage:
+      A separate storage area for each area(tab) for the duration of the page session(as long as the browser is open, including page reloads and restores).
+
+    -localStorage:
+      Does the same thing, but persists even when the browser is closed and reopened.
+
+Mechanisms:
+  window.localStorage -Stores data with no expiration date.
+  window.sessionStorage -Stores data for one session.
+
+Local Storage Methods:
+  setItem() // Add key and value to local storage
+  getItem() // Retrieve a value by the key
+  removeItem() // Remove an item by key
+  clear() // Clear all storage
+  local storage // See all that is in you local storage
+
+Example Code:
+  localStorage.setItem('key', 'value')  // Sets data in global object
+  localStorage.getItem('key') // Gets the data in global object
+  localStorage.removeItem('key') // Removes key-value pair from browser
+  localStorage.clear() // Clears all localStorage
